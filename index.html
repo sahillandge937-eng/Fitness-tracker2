@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0A0D0B">
+  <title>PULSE — AI Fitness Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="toast" class="toast" hidden></div>
+  <div id="authScreen" class="auth-screen"></div>
+
+  <div id="appShell" class="app-shell" hidden>
+    <aside class="sidebar" id="sidebar">
+      <div class="brand"><span class="dot"></span> PULSE</div>
+      <div class="profile-mini" id="profileMini"></div>
+      <nav class="nav-group" id="navGroup"></nav>
+      <div class="sidebar-footer">PULSE AI Fitness Tracker · local & private</div>
+    </aside>
+
+    <div class="main">
+      <div class="mobile-topbar">
+        <button class="icon-menu" id="menuToggle" aria-label="Open navigation">☰</button>
+        <strong>PULSE</strong>
+      </div>
+
+      <header class="topbar">
+        <div>
+          <h1 id="pageTitle">Dashboard</h1>
+          <div class="date" id="pageDate"></div>
+        </div>
+        <div class="topbar-right" id="topbarActions"></div>
+      </header>
+
+      <main class="content" id="content"></main>
+    </div>
+  </div>
+
+  <div id="modalRoot"></div>
+  <script src="app.js"></script>
+</body>
+</html>
